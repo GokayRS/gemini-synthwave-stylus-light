@@ -1,0 +1,176 @@
+@-moz-document domain("gemini.google.com") {
+/* =========================================================
+       1. ESTRUCTURA Y LAYOUT PRINCIPAL (ANCHO COMPLETO)
+       ========================================================= */
+
+    /* Desbloquear el contenedor principal de scroll y fondo global */
+    infinite-scroller,
+    .infinite-scroller,
+    .conversation-container,
+    .main-content,
+    [role="main"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        box-sizing: border-box !important;
+        background-color: #F8F9FA !important;
+        color: #1F2937 !important;
+    }
+
+    /* Desbloquear filas y contenedores de la conversación */
+    conversation-turn,
+    .conversation-turn,
+    user-query,
+    .user-query,
+    model-response,
+    .model-response {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Flujo de texto a lo ancho en respuestas */
+    .markdown p,
+    .markdown ul,
+    .markdown ol,
+    .markdown pre {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    div.markdown {
+        width: 90% !important;
+    }
+
+    /* Estilo unificado para las respuestas del modelo */
+    model-response {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+        padding-left: 30px;
+        padding-top: 20px;
+        border: 1px solid #E2E8F0 !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+        border-radius: var(--gem-sys-shape--corner-extra-large-max);
+    }
+
+
+    /* =========================================================
+       2. EXPANSIÓN DE TARJETAS Y CONTENEDORES DE CÓDIGO
+       ========================================================= */
+
+    /* Permitir que el contenedor de respuestas ocupe todo el ancho sin margen */
+    response-element {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+
+    /* =========================================================
+       3. TIPOGRAFÍA, ENCABEZADOS Y ACENTOS
+       ========================================================= */
+
+    /* Títulos principales (Púrpura Vibrante) */
+    h1, h2, h3, h4, h5, h6,
+    .markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+        color: #5B21B6 !important;
+        margin: 0 !important;
+        padding-top: 15px !important;
+        font-weight: 700 !important;
+    }
+
+    /* Negrita (Verde Esmeralda) */
+    strong, b, .markdown strong, .markdown b {
+        color: #047857 !important;
+        font-weight: 700 !important;
+    }
+
+    /* Cursiva (Violeta Suave) */
+    em, i, .markdown em, .markdown i {
+        color: #6D28D9 !important;
+    }
+
+    /* Enlaces (Magenta/Rosa) */
+    a, .markdown a {
+        color: #D946EF !important;
+        text-decoration: underline !important;
+    }
+
+
+    /* =========================================================
+       4. MENSAJES Y BURBUJAS DEL USUARIO (MODO EDICIÓN/INPUT)
+       ========================================================= */
+
+    /* Ancho completo para contenedores de usuario */
+    .query-content,
+    .query-bubble-with-status,
+    .user-query-bubble-with-background,
+    div.user-query-container {
+        width: 100% !important;
+    }
+
+    .query-bubble-with-status {
+        padding-right: 30px;
+    }
+
+    /* Burbuja de mensaje del usuario (Lila muy claro) */
+    .user-query-bubble-with-background {
+        max-width: 80% !important;
+        background-color: #F3E8FF !important;
+        color: #1F2937 !important;
+        border: 1px solid #DDD6FE !important;
+    }
+
+    /* Ajustes de edición de mensaje */
+    .query-content.edit-mode {
+        margin: 0 !important;
+    }
+
+    mat-form-field.edit-form {
+        max-width: none !important;
+    }
+
+    /* Campo de entrada de texto */
+    div.text-input-field {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+        border: 1px solid #CBD5E1 !important;
+        border-radius: var(--gem-sys-shape--corner-extra-large-max) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    }
+
+
+    /* =========================================================
+       5. INTERFAZ GENERAL, NAVEGACIÓN Y ELEMENTOS OCULTOS
+       ========================================================= */
+
+    /* Área del cuadro de entrada */
+    .input-area-container {
+        padding-bottom: 20px;
+        max-width: none !important;
+    }
+
+    /* Menús de navegación e iconos */
+    div.overflow-container {
+        background-color: #F8F9FA !important;
+    }
+
+    mat-icon,
+    span.title-text,
+    div.overflow-container * {
+        color: #6D28D9 !important;
+        text-decoration: none !important;
+    }
+
+    gem-nav-list-item {
+        border: 1px solid #E2E8F0 !important;
+        border-radius: var(--gem-sys-shape--corner-extra-large-max) !important;
+    }
+
+    /* Elementos deshabilitados/ocultos */
+    hallucination-disclaimer,
+    div.adv-upsell,
+    div.footer-container {
+        display: none !important;
+    }
+}
