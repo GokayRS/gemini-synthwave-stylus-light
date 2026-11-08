@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name           Gemini Synthwave
+@namespace      github.com/GokayRS/gemini-synthwave-stylus
+@version        1.0.0
+@description    Light Synthwave theme for Google Gemini. Full-width & neon highlights. / Tema claro Synthwave para Gemini con diseño panorámico y acentos neón.
+@author         GokayRS
+@homepageURL    https://github.com/GokayRS/gemini-synthwave-stylus-light
+@license        MIT
+==/UserStyle== */
+
 @-moz-document domain("gemini.google.com") {
 /* =========================================================
        1. ESTRUCTURA Y LAYOUT PRINCIPAL (ANCHO COMPLETO)
