@@ -18,7 +18,7 @@ Custom light theme for the Google Gemini web interface via Stylus. Designed with
 
 1. Install the **Stylus** extension for your browser ([Chrome](https://chrome.google.com/webstore/detail/stylus/clbfbmidbdobicbbnoobnhmoaikkdbec) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)).
 2. Click the link below to install the style directly:
-   👉 **[Install Gemini Synthwave Light](https://raw.githubusercontent.com/GokayRS/gemini-synthwave-stylus/main/gemini-synthwave.user.css)** *(Raw File)*
+   👉 **[Install Gemini Synthwave Light](https://raw.githubusercontent.com/GokayRS/gemini-synthwave-stylus-light/main/gemini-synthwave-light.user.css)** *(Raw File)*
 3. Stylus will open. Click **"Install Style"**.
 
 ---
